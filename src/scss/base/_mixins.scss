@@ -1,0 +1,23 @@
+@mixin respons-property($css-property, $start, $end) {
+	@media (min-width: 320px) and (max-width: 1920px) {
+		#{$css-property}: calc(#{$start}px + (#{$end} - #{$start}) * ((100vw - 320px) / (1920 - 320)));
+	}
+}
+
+// $css-property - свойство стилей которое надо сделать respons (margin, padding, gap, whidth, height...)
+// $start - начальный (минимальный) размер шрифта
+// $end - конечный (максимальный) размер шрифта
+
+// *Пример использования
+// h1 {
+// gap: 40px - обязательно указывать начальное значение
+//   @include adaptive-respons-property(gap, 20, 40); // Свойcndj - "gap" Начальный размер: 20px, Конечный размер: 40px
+// }
+// так же желательно помещать в @media (min-width: 300px) and (max-width: 1248px) width, height;
+
+// main {
+// 	height: 648px
+// 	@media (min-width: 300px) and (max-width: 1248px) {
+// 		@include respons-property(height, 358, 648);
+// 	}
+// }

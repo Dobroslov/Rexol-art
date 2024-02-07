@@ -1,0 +1,97 @@
+.about {
+  margin-bottom: 154px;
+  @include respons-property(margin-bottom, 60, 154);
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 0px 57px 0px 89px;
+    @include respons-property(padding-right, 20, 57);
+    @include respons-property(padding-left, 20, 89);
+    @include respons-property(font-size, 20, 89);
+    @media (max-width: 668px) {
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__img-container img {
+    min-width: 200px;
+    border-radius: 16px;
+    overflow: hidden;
+    @media (max-width: 668px) {
+      margin: 0 auto;
+      max-width: 120px;
+    }
+  }
+
+  &__content {
+    max-width: 650px;
+  }
+
+  &__title-2 {
+    text-transform: uppercase;
+    margin-bottom: 64px;
+    @include respons-property(margin-bottom, 15, 64);
+    @media (max-width: 668px) {
+      text-align: center;
+    }
+  }
+
+  &__title-3 {
+    margin-bottom: 32px;
+    @include respons-property(margin-bottom, 14, 32);
+    @media (max-width: 668px) {
+      text-align: center;
+    }
+  }
+
+  &__text {
+    margin-bottom: 58px;
+    @include respons-property(margin-bottom, 20, 58);
+  }
+
+  &__list {
+    display: flex;
+    justify-content: flex-start;
+    gap: 80px;
+    // max-width: 220px;
+    @include respons-property(gap, 30, 80);
+    @media (max-width: 668px) {
+      justify-content: space-between;
+    }
+  }
+
+  &__item {
+    flex: 0 1 220px;
+  }
+
+  &__description {
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0.065em;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+    @media (max-width: 668px) {
+      text-align: center;
+    }
+  }
+
+  &__number {
+    font-size: 64px;
+    @include respons-property(font-size, 40, 64);
+    font-weight: 900;
+    line-height: 87px;
+    @include respons-property(line-height, 50, 87);
+    letter-spacing: 0.065em;
+    @media (max-width: 668px) {
+      text-align: center;
+    }
+  }
+}
+
+.about__wrapper {
+ 
+}

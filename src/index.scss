@@ -1,0 +1,16 @@
+@import './scss/base/reset';
+@import './scss/base/constants';
+@import './scss/base/mixins';
+@import './scss/base/global';
+@import './scss/base/fonts';
+
+@import './scss/header';
+@import './scss/hero';
+@import './scss/about';
+@import './scss/advantages';
+@import './scss/portfolio';
+@import './scss/contactForm';
+@import './scss/footer';
+
+@import './scss/components/buttons';
+@import './scss/components/burger';

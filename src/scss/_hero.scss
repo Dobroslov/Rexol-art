@@ -1,0 +1,75 @@
+.hero {
+  margin-bottom: 130px;
+  @include respons-property(margin-bottom, 40, 130);
+
+  &__title {
+    text-align: left;
+    margin-bottom: 48px;
+    @include respons-property(margin-bottom, 20, 48);
+    @media (max-width: 668px) {
+      text-align: center;
+    }
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    background-color: $dark-gray-light;
+    gap: 20px;
+    padding: 80px 57px 80px 93px;
+    @media (max-width: 668px) {
+      flex-direction: column;
+      padding: 60px 40px 60px 40px;
+    }
+    @media (max-width: 400px) {
+      padding: 30px 20px 30px 20px;
+    }
+  }
+
+  &__content {
+    max-width: 508px;
+    @media (max-width: 668px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .button {
+    align-self: center;
+  }
+
+  &__blockquote {
+    margin: 0 0 43px 0;
+    & > p {
+      font-size: 20px;
+      @include respons-property(font-size, 16, 20);
+      font-weight: 400;
+      line-height: 26px;
+      @include respons-property(line-height, 20, 26);
+      letter-spacing: 5.5%;
+      margin: 0;
+    }
+  }
+
+  &__cite {
+    font-style: normal;
+    font-size: 20px;
+    @include respons-property(font-size, 16, 20);
+    font-weight: 400;
+    line-height: 26px;
+    @media (max-width: 668px) {
+      margin-left: 40px;
+    }
+  }
+
+  &__img-container {
+    min-width: 200px;
+    height: 100%;
+    border-radius: 16px;
+    overflow: hidden;
+    @media (max-width: 668px) {
+      margin: 0 auto;
+    }
+  }
+}

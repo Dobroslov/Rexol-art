@@ -1,0 +1,60 @@
+.button {
+  font-weight: 700;
+  line-height: 1.22;
+  border-radius: 4px;
+  padding: 12px 16px;
+  @include respons-property(padding-bottom, 7, 12);
+  @include respons-property(padding-top, 7, 12);
+  @include respons-property(padding-left, 10, 16);
+  @include respons-property(padding-right, 10, 16);
+  @include respons-property(font-size, 12, 16);
+  display: inline-block;
+  text-transform: uppercase;
+  cursor: pointer; 
+  transform: translateX(0px);
+  overflow: hidden;
+}
+
+.button.button_transparent {
+  border: 1px solid #000;
+  background-color: transparent;
+}
+
+.button > span {
+  display: inline-block;
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 100%;
+  left: 0;
+  background: rgb(20, 20, 20);
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.5s;
+}
+
+.button:hover {
+  color: #fff;
+}
+
+.button:hover::before {
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+.button.button_fill {
+  border: none;
+  background: linear-gradient(103.02deg, #f81f01 0%, #ee076e 98.96%);
+  color: #fff;
+  padding: 12px 27px;
+  overflow: hidden;
+}
+
+.button.button_fill:hover::before {
+  background: linear-gradient(103.02deg, #bb1803 0%, #c7075d 98.96%);
+}

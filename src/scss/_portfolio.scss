@@ -1,0 +1,49 @@
+.portfolio {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 132px;
+    @include respons-property(margin-bottom, 40, 132);
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 60px;
+    @include respons-property(gap, 20, 60);
+    margin-bottom: 60px;
+    justify-content: center;
+  }
+
+  &__img {
+    width: 340px;
+    height: 340px;
+    margin: 0 auto;
+    @media (max-width: 741px) {
+      width: 340px;
+      height: 340px;
+      &:nth-child(n + 4) {
+        display: none;
+      }
+    }
+    @media (max-width: 390px) {
+      width: 280px;
+      height: 280px;
+    }
+  }
+
+  &__btn {
+    align-self: center;
+  }
+
+  &__img &__btn.button {
+    display: block;
+    margin: 0 auto 130px auto;
+    width: 260px;
+  }
+}

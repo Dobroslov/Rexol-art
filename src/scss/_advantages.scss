@@ -1,0 +1,57 @@
+.advantages {
+  margin-bottom: 130px;
+  @include respons-property(margin-bottom, 50, 130);
+
+  &__list {
+    max-width: 1005px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    @media (max-width: 668px) {
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 281px;
+  height: 100%;
+  &__svg {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 120px;
+    @include respons-property(width, 60, 120);
+    height: 120px;
+    @include respons-property(height, 60, 120);
+    margin-bottom: 24px;
+  }
+
+  &__svg.speed {
+    background-image: url('./assets/svg/clock.svg');
+  }
+
+  &__svg.qualitatively {
+    background-image: url('./assets/svg/qualitatively.svg');
+  }
+
+  &__svg.idea {
+    background-image: url('./assets/svg/ideas.svg');
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  &__text {
+    text-align: center;
+  }
+}
