@@ -1,5 +1,5 @@
 @mixin respons-property($css-property, $start, $end) {
-	@media (min-width: 320px) and (max-width: 1920px) {
+	@media (min-width: 200px) and (max-width: 1920px) {
 		#{$css-property}: calc(#{$start}px + (#{$end} - #{$start}) * ((100vw - 320px) / (1920 - 320)));
 	}
 }
