@@ -32,27 +32,28 @@
               </li>
             </ul>
             <button class="button button_transparent" type="button">Заказать</button>
-            <button class="burger" type="button">
-              <div class="burger__button">
+            <div class="burger">
+              <button class="burger__button" type="button">
                 <span class="burger__line"></span>
                 <span class="burger__line"></span>
                 <span class="burger__line"></span>
-              </div>
-              </иг>
-              <ul class="mobile__nav">
-                <li>
-                  <a href="#hero" class="mobile nav__link active">Главная</a>
-                </li>
-                <li>
-                  <a href="#advantages" class="mobile nav__link">Преимущества</a>
-                </li>
-                <li>
-                  <a href="#about" class="mobile nav__link">Обо мне</a>
-                </li>
-                <li>
-                  <a href="#portfolio" class="mobile nav__link">Портфолио</a>
-                </li>
-              </ul>
+              </button>
+            </div>
+            
+            <ul class="mobile__nav">
+              <li>
+                <a href="#hero" class="mobile nav__link active">Главная</a>
+              </li>
+              <li>
+                <a href="#advantages" class="mobile nav__link">Преимущества</a>
+              </li>
+              <li>
+                <a href="#about" class="mobile nav__link">Обо мне</a>
+              </li>
+              <li>
+                <a href="#portfolio" class="mobile nav__link">Портфолио</a>
+              </li>
+            </ul>
           </nav>
         </div>
       </div>
@@ -70,7 +71,7 @@
               </blockquote>
               <button class="button button_fill" type="button">Заказать</button>
             </div>
-            <div <div class="hero__img-container">
+            <div class="hero__img-container">
               <img src="./assets/images/girl_main.jpg" alt="Sketch of a girl">
             </div>
           </div>
@@ -79,7 +80,7 @@
       <section class="about about__wrapper" id="about">
         <div class="wrapper">
           <div class="about__container">
-            <div <div class="about__img-container">
+            <div class="about__img-container">
               <img src="./assets/images/about_me.jpg" alt="Abstract illustration with a girl">
             </div>
             <div class="about__content">
@@ -160,8 +161,10 @@
       <section class="contact">
         <div class="contact__wrapper">
           <div class="contact__img-block img-block_left">
-            <img src="./assets/images/about_me.jpg" class="large-image img-block" alt="Artwork featuring a female figure">
-            <img src="./assets/images/white-haired-girl.png" class="medium-image img-block" alt="Artistic rendering of a girl">
+            <img src="./assets/images/about_me.jpg" class="large-image img-block"
+              alt="Artwork featuring a female figure">
+            <img src="./assets/images/white-haired-girl.png" class="medium-image img-block"
+              alt="Artistic rendering of a girl">
             <img src="./assets/images/cowboy.jpg" class="small-image img-block" alt="Illustration of a cowboy">
           </div>
           <form class="contact__form form" action="/submit-form" method="POST">
@@ -174,15 +177,15 @@
             <input class="form__input input-email" type="email" id="email" name="email" placeholder="Укажите почту">
 
             <label for="inputImage" class="form__label-file"></label>
-            <input class="form__input input-file" type="file" id="inputImage" name="image" accept="image/*"
-              placeholder="Выберите изображение">
+            <input class="form__input input-file" type="file" id="inputImage" name="image" accept="image/*">
 
             <button type="submit" class="button button_fill submit-btn">Отправить заявку</button>
           </form>
           <div class="contact__img-block img-block_right">
             <img src="./assets/images/girl_main.jpg" class="small-image" alt="Abstract sketch with a female subject">
             <img src="./assets/images/girl_list_img.jpg" class="medium-image" alt="Illustration of a woman in pencil">
-            <img src="./assets/images/flag-girl.jpg" class="large-image" alt="Abstract illustration with a girl with flag">
+            <img src="./assets/images/flag-girl.jpg" class="large-image"
+              alt="Abstract illustration with a girl with flag">
           </div>
         </div>
       </section>

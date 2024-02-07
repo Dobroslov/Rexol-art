@@ -1,10 +1,6 @@
 .burger {
   display: none;
-  padding: 0;
-  border: none;
-  font: inherit;
-  color: inherit;
-  background-color: transparent;
+ 
 
   @media (max-width: 890px) {
     display: block;
@@ -13,6 +9,11 @@
     height: 20px;
   }
   &__button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
     position: absolute;
     right: 20px;
     top: 0px;
