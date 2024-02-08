@@ -10,12 +10,13 @@
   }
 
   &__logo {
-    background-image: url('./assets/images/logo.png');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-width: 80px;
-    height: 60px;
+    background-color: $white;
+    // background-image: url('./assets/images/logo.png');
+    // background-size: contain;
+    // background-position: center;
+    // background-repeat: no-repeat;
+    // min-width: 80px;
+    // height: 60px;
   }
 
   &__nav {
