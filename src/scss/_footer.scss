@@ -36,14 +36,14 @@
   }
 }
 
-// .link-whatsapp {
-//   background-image: url('./assets/svg/whatsapp.svg');
-// }
+.social__icon {
+  width: 33px;
+  height: 33px;
+  fill: $black;
+  transition: all ease-in 0.2s;
+}
 
-// .link-telegram {
-//   background-image: url('./assets/svg/telegram.svg');
-// }
-
-// .link-vk {
-//   background-image: url('./assets/svg/vk.svg');
-// }
+.social__icon:hover {
+  transform: scale(1.1);
+  fill: $dark-gray;
+}

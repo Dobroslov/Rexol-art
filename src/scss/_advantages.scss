@@ -23,29 +23,19 @@
   align-items: center;
   width: 281px;
   height: 100%;
-  &__svg {
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
+  &__svg-container {
     width: 120px;
-    @include respons-property(width, 60, 120);
     height: 120px;
-    @include respons-property(height, 60, 120);
     margin-bottom: 24px;
   }
-
-  &__svg.speed {
-    background-image: url('./assets/svg/clock.svg');
+  &__svg {
+    width: 120px;
+    height: 120px;
+    fill: #f81f01;
+    fill: $accent;
+    transition: all ease-in 0.2s;
   }
-
-  &__svg.qualitatively {
-    background-image: url('./assets/svg/qualitatively.svg');
-  }
-
-  &__svg.idea {
-    background-image: url('./assets/svg/ideas.svg');
-  }
-
+  
   &__title {
     text-align: center;
     margin-bottom: 32px;

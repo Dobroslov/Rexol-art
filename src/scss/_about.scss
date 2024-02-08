@@ -57,7 +57,6 @@
     display: flex;
     justify-content: flex-start;
     gap: 80px;
-    // max-width: 220px;
     @include respons-property(gap, 30, 80);
     @media (max-width: 668px) {
       justify-content: space-between;
@@ -90,8 +89,4 @@
       text-align: center;
     }
   }
-}
-
-.about__wrapper {
- 
 }
